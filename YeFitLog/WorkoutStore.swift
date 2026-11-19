@@ -183,8 +183,8 @@ final class WorkoutStore: ObservableObject {
     /// 只迁移历史 sessions；进行中的训练不迁移（避免把网页端未结束的会话带过来）。
     @discardableResult
     func importLegacyBackup(_ raw: Data) throws -> Int {
-        guard let root = try? JSONSerialization.jsonObject(with: raw) as? [String: Any],
-              let root else { throw StoreError.badBackup }
+        guard let root = (try? JSONSerialization.jsonObject(with: raw)) as? [String: Any]
+        else { throw StoreError.badBackup }
         let rawSessions = root["sessions"] as? [[String: Any]] ?? []
         guard !rawSessions.isEmpty else { throw StoreError.noSessions }
 

@@ -74,7 +74,7 @@ struct SettingsView: View {
                     .accessibilityLabel("体重 \(Int(store.data.settings.bodyWeight)) 公斤")
                 }
 
-                Section("数据") {
+                Section {
                     Button {
                         showImporter = true
                     } label: {
@@ -89,6 +89,8 @@ struct SettingsView: View {
                         Label("导出本机备份", systemImage: "square.and.arrow.up")
                     }
                     .accessibilityLabel("导出本机训练记录")
+                } header: {
+                    Text("数据")
                 } footer: {
                     Text("在网页版「我的 · 数据管理 · 导出数据」拿到 JSON 后，用「导入网页版备份」把历史记录带过来。进行中的训练不会迁移。")
                 }
