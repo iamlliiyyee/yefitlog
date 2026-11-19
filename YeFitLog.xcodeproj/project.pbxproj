@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82FDB5029E6F8623BBAF7240 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0F96C682DC1558B12A4D3 /* ContentView.swift */; };
+		A1824FC9818B629851F16036 /* ExerciseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16642FDD865AFEF000A9D275 /* ExerciseDatabase.swift */; };
+		98370FCD01B349E8E370DA03 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E4EBD35099692D1843B00 /* HapticsManager.swift */; };
+		7FCA99F642FA2B3B5E5281AC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22586ABB49CABC9DB8DB398 /* Models.swift */; };
+		4E6D50CC35050694463C1CA4 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB57A97674B38EFB048CBFFE /* NotificationManager.swift */; };
+		B2BDE4A0CD659C6FB37D634E /* RestTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9C4F9CA76A918EA0A30E3 /* RestTimer.swift */; };
+		838086257F85A3779D3875E5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDE7558A6403A54860ADEA3 /* Theme.swift */; };
+		774AFEE0896E7308E487EDF0 /* ExercisePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D250FD19A1214AABAA6AF8 /* ExercisePickerView.swift */; };
+		40300A491A701C9BEC714163 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB23C6A2175621F3300F6E /* HistoryView.swift */; };
+		AA2460F6BFA3BB134EFBADC0 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4FE78CF3BA4820EB58B582 /* LibraryView.swift */; };
+		0366047E1EAD5CC5EA2D8838 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A190201E6D76FCFD340ACF /* SettingsView.swift */; };
+		798206DCC35E5047FDA9422B /* TrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D6444991EA93DEB3A5902 /* TrainView.swift */; };
+		51513937C93962B60BEDA1F8 /* WorkoutStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA067AA17EA7737E98F1F68C /* WorkoutStore.swift */; };
+		2BB292D0CFEE2684F96498C9 /* YeFitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9575358E878B36A7713700 /* YeFitLogApp.swift */; };
+		DB249DB9D0FF833647E29581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75046E84DAE53AA83B440071 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48E0F96C682DC1558B12A4D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16642FDD865AFEF000A9D275 /* ExerciseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDatabase.swift; sourceTree = "<group>"; };
+		731E4EBD35099692D1843B00 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		C22586ABB49CABC9DB8DB398 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EB57A97674B38EFB048CBFFE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		01D9C4F9CA76A918EA0A30E3 /* RestTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTimer.swift; sourceTree = "<group>"; };
+		BDDE7558A6403A54860ADEA3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		84D250FD19A1214AABAA6AF8 /* ExercisePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePickerView.swift; sourceTree = "<group>"; };
+		FFAB23C6A2175621F3300F6E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		EC4FE78CF3BA4820EB58B582 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		D8A190201E6D76FCFD340ACF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		533D6444991EA93DEB3A5902 /* TrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainView.swift; sourceTree = "<group>"; };
+		FA067AA17EA7737E98F1F68C /* WorkoutStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutStore.swift; sourceTree = "<group>"; };
+		4E9575358E878B36A7713700 /* YeFitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeFitLogApp.swift; sourceTree = "<group>"; };
+		75046E84DAE53AA83B440071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		571CD3829D85311D5626CD79 /* YeFitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeFitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB741EB20F8932ADC61B0107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		956934E60556FDCE0710C957 = {
+			isa = PBXGroup;
+			children = (
+				56A1B566039BA486F2D6DC66 /* YeFitLog */,
+				CC0F68FE2D81F9614883F277 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56A1B566039BA486F2D6DC66 /* YeFitLog */ = {
+			isa = PBXGroup;
+			children = (
+				7CBFF3E6D5C1F97BC00DAC77 /* Views */,
+				48E0F96C682DC1558B12A4D3 /* ContentView.swift */,
+				16642FDD865AFEF000A9D275 /* ExerciseDatabase.swift */,
+				731E4EBD35099692D1843B00 /* HapticsManager.swift */,
+				C22586ABB49CABC9DB8DB398 /* Models.swift */,
+				EB57A97674B38EFB048CBFFE /* NotificationManager.swift */,
+				01D9C4F9CA76A918EA0A30E3 /* RestTimer.swift */,
+				BDDE7558A6403A54860ADEA3 /* Theme.swift */,
+				FA067AA17EA7737E98F1F68C /* WorkoutStore.swift */,
+				4E9575358E878B36A7713700 /* YeFitLogApp.swift */,
+				75046E84DAE53AA83B440071 /* Assets.xcassets */,
+			);
+			path = YeFitLog;
+			sourceTree = "<group>";
+		};
+		7CBFF3E6D5C1F97BC00DAC77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84D250FD19A1214AABAA6AF8 /* ExercisePickerView.swift */,
+				FFAB23C6A2175621F3300F6E /* HistoryView.swift */,
+				EC4FE78CF3BA4820EB58B582 /* LibraryView.swift */,
+				D8A190201E6D76FCFD340ACF /* SettingsView.swift */,
+				533D6444991EA93DEB3A5902 /* TrainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC0F68FE2D81F9614883F277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				571CD3829D85311D5626CD79 /* YeFitLog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* YeFitLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B8556283B90617561D0BB27 /* Build configuration list for PBXNativeTarget "YeFitLog" */;
+			buildPhases = (
+				78B9FD9EA24CAE7E052DA17C /* Sources */,
+				EB741EB20F8932ADC61B0107 /* Frameworks */,
+				966E70EE9C017A93B235DDBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YeFitLog;
+			productName = YeFitLog;
+			productReference = 571CD3829D85311D5626CD79 /* YeFitLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 3C279D365CC8AEBC74749558 /* Build configuration list for PBXProject "YeFitLog" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = 956934E60556FDCE0710C957;
+			productRefGroup = CC0F68FE2D81F9614883F277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* YeFitLog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		966E70EE9C017A93B235DDBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB249DB9D0FF833647E29581 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78B9FD9EA24CAE7E052DA17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82FDB5029E6F8623BBAF7240 /* ContentView.swift in Sources */,
+				A1824FC9818B629851F16036 /* ExerciseDatabase.swift in Sources */,
+				98370FCD01B349E8E370DA03 /* HapticsManager.swift in Sources */,
+				7FCA99F642FA2B3B5E5281AC /* Models.swift in Sources */,
+				4E6D50CC35050694463C1CA4 /* NotificationManager.swift in Sources */,
+				B2BDE4A0CD659C6FB37D634E /* RestTimer.swift in Sources */,
+				838086257F85A3779D3875E5 /* Theme.swift in Sources */,
+				774AFEE0896E7308E487EDF0 /* ExercisePickerView.swift in Sources */,
+				40300A491A701C9BEC714163 /* HistoryView.swift in Sources */,
+				AA2460F6BFA3BB134EFBADC0 /* LibraryView.swift in Sources */,
+				0366047E1EAD5CC5EA2D8838 /* SettingsView.swift in Sources */,
+				798206DCC35E5047FDA9422B /* TrainView.swift in Sources */,
+				51513937C93962B60BEDA1F8 /* WorkoutStore.swift in Sources */,
+				2BB292D0CFEE2684F96498C9 /* YeFitLogApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E59047DDF7144BA57DB5F654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E35F8313DC47B3F7EA4D9B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DCE8378CD5B2447BEE0DC71E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETSCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETSCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "烨 · 健身记录";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arm64;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yefitlog.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		419F9F6523D6FB123FCFE4B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETSCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETSCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "烨 · 健身记录";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arm64;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yefitlog.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C279D365CC8AEBC74749558 /* Build configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59047DDF7144BA57DB5F654,
+				E35F8313DC47B3F7EA4D9B5A,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B8556283B90617561D0BB27 /* Build configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE8378CD5B2447BEE0DC71E,
+				419F9F6523D6FB123FCFE4B4,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

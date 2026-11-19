@@ -1,0 +1,53 @@
+# 把 YeFitLog/ 目录（或包含它的整个仓库）推到 GitHub，在 Actions 里手动触发即可编译。
+# 产物是【未签名】的 .ipa / .app：可下载存档，但装到真机仍需用 Xcode + Apple ID 签名。
+# 若你有付费开发者账号，可在本机 Mac 上用 Xcode 直接 Archive + Distribute。
+name: Build iOS app
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Locate project
+        id: locate
+        run: |
+          if [ -f "YeFitLog.xcodeproj/project.pbxproj" ]; then DIR="."
+          elif [ -f "YeFitLog/YeFitLog.xcodeproj/project.pbxproj" ]; then DIR="YeFitLog"
+          else echo "::error::找不到 YeFitLog.xcodeproj"; exit 1; fi
+          echo "dir=$DIR" >> "$GITHUB_OUTPUT"
+          echo "工程目录: $DIR"
+
+      - name: Build unsigned
+        run: |
+          cd "${{ steps.locate.outputs.dir }}"
+          xcodebuild -project YeFitLog.xcodeproj \
+            -scheme YeFitLog \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            -quiet \
+            build
+
+      - name: Package unsigned IPA
+        run: |
+          cd "${{ steps.locate.outputs.dir }}"
+          mkdir -p output/Payload
+          cp -R build/Build/Products/Release-iphoneos/YeFitLog.app output/Payload/
+          cd output && zip -qr YeFitLog-unsigned.ipa Payload
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: YeFitLog-unsigned-ipa
+          path: ${{ steps.locate.outputs.dir }}/output/YeFitLog-unsigned.ipa
